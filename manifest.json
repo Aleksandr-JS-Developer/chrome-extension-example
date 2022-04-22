@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+  
+	"name": "A",
+	"version": "0",
+	"description": "D",
+	"author": "",
+  
+	"permissions": [
+	  "activeTab"
+	],
+  
+	"content_scripts": [
+	  {
+		"matches": ["https://www.google.com/*"],
+		"js": ["config.js"]
+	  }
+	],
+	"action": {
+	  "default_popup": "popup.html"
+	}
+  }
